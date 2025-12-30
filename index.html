@@ -121,7 +121,7 @@
 
     async function getAIResponse(userQuery) {
       // モデルを 2.5-flash に修正
-      const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
+     const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
       
       const prompt = `あなたは日本史のプロとして、歴史人物「${currentSelection}」本人として回答してください。
       【ルール】:
@@ -187,6 +187,7 @@
   </script>
 </body>
 </html>
+
 
 
 
