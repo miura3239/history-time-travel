@@ -69,7 +69,7 @@
 
   <script>
     // ★APIキーを最新の Gemini 2.5 Flash 用にセット済み
-    const API_KEY = "AIzaSyBXjsg0ZzgSMoiJVRU751UhBYz5_VTjlhM"; 
+    const API_KEY = "AIzaSyA_5bJFL-PMKNNZiR6MRJHUzA_NHnlG9nA"; 
 
     const eraData = [
       { name: "弥生・古墳", people: ["卑弥呼"] },
@@ -121,7 +121,7 @@
 
     async function getAIResponse(userQuery) {
       // モデルを 2.5-flash に修正
-      const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`;
+      const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
       
       const prompt = `あなたは日本史のプロとして、歴史人物「${currentSelection}」本人として回答してください。
       【ルール】:
